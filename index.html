@@ -4,12 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nageldesign in Weissach | Orchidea Viola Homestudio</title>
+<title>Nagelstudio Weissach – Nageldesign &amp; Gelnägel | Orchidea Viola</title>
 
-<meta name="description" content="Orchidea Viola Homestudio in 71287 Weissach: Nageldesign, Gelmodellage, Auffüllen, Maniküre und Pediküre. Termin online oder per WhatsApp vereinbaren.">
+<meta name="description" content="Nagelstudio in Weissach: Nageldesign, Gelnägel, Auffüllen, Maniküre und Pediküre im Homestudio Orchidea Viola. Termin per WhatsApp oder online buchen – 0176 60603908.">
+
+<link rel="canonical" href="https://orchidea-viola.de/">
 
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#fffaf7">
+<meta name="geo.region" content="DE-BW">
+<meta name="geo.placename" content="Weissach">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Orchidea Viola Homestudio">
+<meta property="og:title" content="Nagelstudio Weissach – Nageldesign &amp; Gelnägel | Orchidea Viola">
+<meta property="og:description" content="Nageldesign, Gelnägel, Maniküre und Pediküre im Homestudio in Weissach. Termin per WhatsApp oder online buchen.">
+<meta property="og:url" content="https://orchidea-viola.de/">
+<meta name="twitter:card" content="summary_large_image">
 
 <style>
 :root{
@@ -195,23 +207,22 @@ nav{
 }
 
 .eyebrow{
-  text-transform:uppercase;
-  letter-spacing:4px;
-  font-size:12px;
+  letter-spacing:1px;
+  font-size:13px;
   color:var(--rose-dark);
   margin-bottom:16px;
 }
 
 h1{
-  font-size:clamp(48px,7vw,82px);
+  font-size:clamp(40px,6.4vw,72px);
   font-weight:400;
-  line-height:.98;
+  line-height:1;
   letter-spacing:1px;
   margin-bottom:12px;
 }
 
 .hero-script{
-  font-size:40px;
+  font-size:clamp(32px,5.4vw,52px);
   color:var(--rose-dark);
 }
 
@@ -508,12 +519,72 @@ section{
   margin-right:8px;
 }
 
+.info-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.info-card{
+  background:rgba(255,250,247,.85);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:30px;
+}
+
+.info-card h3{
+  font-size:22px;
+  font-weight:400;
+  margin-bottom:12px;
+  color:var(--rose-dark);
+}
+
+.info-card p,
+.info-card address{
+  font-size:15px;
+  font-style:normal;
+}
+
+.area-text{
+  max-width:760px;
+  margin:26px auto 0;
+  text-align:center;
+  font-size:15px;
+}
+
+.faq-item{
+  background:rgba(255,250,247,.85);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:22px 24px;
+  margin-bottom:14px;
+}
+
+.faq-item h3{
+  font-size:19px;
+  font-weight:400;
+  margin-bottom:6px;
+  color:var(--rose-dark);
+}
+
+.faq-item p{
+  font-size:15px;
+}
+
 footer{
   padding:32px 0 90px;
   text-align:center;
   font-size:12px;
   color:#776d68;
   border-top:1px solid var(--line);
+}
+
+.footer-nap{
+  font-style:normal;
+  font-size:13px;
+  color:var(--brown);
+  margin-bottom:10px;
+  line-height:1.8;
 }
 
 .footer-links{
@@ -640,6 +711,19 @@ footer{
   background:var(--cream);
 }
 
+a:focus-visible,
+.burger:focus-within{
+  outline:2px solid var(--rose-dark);
+  outline-offset:3px;
+}
+
+@media(prefers-reduced-motion:reduce){
+  *{
+    transition:none !important;
+    scroll-behavior:auto !important;
+  }
+}
+
 @media(max-width:900px){
 
   .about-grid{
@@ -655,6 +739,10 @@ footer{
   }
 
   .extras-grid{
+    grid-template-columns:1fr;
+  }
+
+  .info-grid{
     grid-template-columns:1fr;
   }
 }
@@ -705,17 +793,16 @@ footer{
   }
 
   .eyebrow{
-    font-size:10px;
-    letter-spacing:2.5px;
+    font-size:12px;
   }
 
   .hero h1{
-    font-size:clamp(42px,13vw,58px);
-    line-height:1;
+    font-size:clamp(36px,11vw,52px);
+    line-height:1.05;
   }
 
   .hero-script{
-    font-size:clamp(30px,9vw,38px);
+    font-size:clamp(28px,8.5vw,36px);
   }
 
   .hero p{
@@ -766,7 +853,8 @@ footer{
     font-size:32px;
   }
 
-  .price-card{
+  .price-card,
+  .info-card{
     padding:22px 18px;
   }
 
@@ -802,7 +890,7 @@ footer{
   }
 
   .hero h1{
-    font-size:40px;
+    font-size:34px;
   }
 }
 
@@ -827,19 +915,138 @@ footer{
 {
   "@context":"https://schema.org",
   "@type":"NailSalon",
+  "@id":"https://orchidea-viola.de/#nagelstudio",
   "name":"Orchidea Viola Homestudio",
-  "description":"Nageldesign, Gelmodellage, Auffüllen, Maniküre und Pediküre in Weissach.",
-  "telephone":"+49 176 60603908",
+  "alternateName":"Orchidea Viola Nageldesign Weissach",
+  "description":"Nagelstudio in Weissach: Nageldesign, Gelnägel, Gelmodellage, Auffüllen, Maniküre und Pediküre im privaten Homestudio.",
+  "url":"https://orchidea-viola.de/",
+  "telephone":"+4917660603908",
+  "image":"https://orchidea-viola.de/logo.jpg",
+  "priceRange":"€€",
+  "currenciesAccepted":"EUR",
   "address":{
     "@type":"PostalAddress",
     "streetAddress":"Keplerstraße 4",
     "postalCode":"71287",
     "addressLocality":"Weissach",
+    "addressRegion":"Baden-Württemberg",
     "addressCountry":"DE"
   },
+  "geo":{
+    "@type":"GeoCoordinates",
+    "latitude":48.8467,
+    "longitude":8.9283
+  },
+  "areaServed":[
+    {"@type":"City","name":"Weissach"},
+    {"@type":"City","name":"Flacht"},
+    {"@type":"City","name":"Rutesheim"},
+    {"@type":"City","name":"Renningen"},
+    {"@type":"City","name":"Heimsheim"},
+    {"@type":"City","name":"Mönsheim"},
+    {"@type":"City","name":"Weil der Stadt"},
+    {"@type":"City","name":"Leonberg"}
+  ],
   "sameAs":[
     "https://www.instagram.com/orchidea_viola_nageldesignerin",
     "https://beautinda.de/salon/8Zgik8S3V7HRRLXlJw83"
+  ],
+  "potentialAction":{
+    "@type":"ReserveAction",
+    "target":{
+      "@type":"EntryPoint",
+      "urlTemplate":"https://beautinda.de/salon/8Zgik8S3V7HRRLXlJw83",
+      "actionPlatform":[
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
+    },
+    "result":{"@type":"Reservation","name":"Termin im Nagelstudio"}
+  },
+  "hasOfferCatalog":{
+    "@type":"OfferCatalog",
+    "name":"Leistungen Nageldesign",
+    "itemListElement":[
+      {
+        "@type":"Offer",
+        "itemOffered":{"@type":"Service","name":"Gelmodellage kurz bis mittel"},
+        "price":"60",
+        "priceCurrency":"EUR"
+      },
+      {
+        "@type":"Offer",
+        "itemOffered":{"@type":"Service","name":"Gelmodellage lang"},
+        "price":"70",
+        "priceCurrency":"EUR"
+      },
+      {
+        "@type":"Offer",
+        "itemOffered":{"@type":"Service","name":"Auffüllen / Refill kurz bis mittel"},
+        "price":"45",
+        "priceCurrency":"EUR"
+      },
+      {
+        "@type":"Offer",
+        "itemOffered":{"@type":"Service","name":"Maniküre classic"},
+        "price":"30",
+        "priceCurrency":"EUR"
+      },
+      {
+        "@type":"Offer",
+        "itemOffered":{"@type":"Service","name":"Pediküre classic"},
+        "price":"30",
+        "priceCurrency":"EUR"
+      }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"Wo finde ich ein Nagelstudio in Weissach?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Orchidea Viola ist ein Nageldesign-Homestudio in der Keplerstraße 4 in 71287 Weissach. Termine gibt es nach Vereinbarung per WhatsApp unter 0176 60603908 oder über die Online-Buchung."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Was kosten Gelnägel in Weissach?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Eine Neumodellage mit Gel kostet 60 Euro in kurz bis mittel und 70 Euro in lang. Das Auffüllen beginnt bei 45 Euro. Extras wie French, Babyboomer oder Nailart kommen je nach Wunsch dazu."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Wie oft müssen Gelnägel aufgefüllt werden?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"In der Regel alle drei bis vier Wochen. Je nach Nagelwachstum kann der Abstand etwas kürzer oder länger sein."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Wie vereinbare ich einen Termin?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Am schnellsten per WhatsApp an 0176 60603908 oder direkt über die Online-Terminbuchung auf dieser Seite."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Kommen auch Kundinnen aus Rutesheim, Renningen oder Leonberg?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Ja. Das Studio liegt in Weissach und ist aus Flacht, Rutesheim, Renningen, Heimsheim, Mönsheim, Weil der Stadt und Leonberg in wenigen Minuten erreichbar."
+      }
+    }
   ]
 }
 </script>
@@ -906,6 +1113,14 @@ Preise
 Über mich
 </a>
 
+<a href="#anfahrt">
+Anfahrt & Öffnungszeiten
+</a>
+
+<a href="#fragen">
+Häufige Fragen
+</a>
+
 <a href="#kontakt">
 Kontakt & Termine
 </a>
@@ -924,23 +1139,23 @@ Kontakt & Termine
 
 <div class="container hero-grid">
 
-<div class="eyebrow">
-Nageldesign · Maniküre · Pediküre
-</div>
+<p class="eyebrow">
+Nagelstudio in 71287 Weissach – Termine nach Vereinbarung
+</p>
 
 <h1>
-Schöne Nägel,<br>
+Nageldesign<br>
 <span class="hero-script">
-gutes Gefühl.
+in Weissach
 </span>
 </h1>
 
 <p>
 Willkommen bei
 <strong>Orchidea Viola</strong>
-– deinem liebevoll eingerichteten Nageldesign-Homestudio.
-Zeit für dich, gepflegte Nägel und kleine Details,
-die den Unterschied machen.
+– dem liebevoll eingerichteten Nageldesign-Homestudio in Weissach.
+Gelnägel, Maniküre und Pediküre in ruhiger Atmosphäre,
+mit Zeit für dich und Liebe zum Detail.
 </p>
 
 </div>
@@ -961,7 +1176,7 @@ Ich freue mich auf dich
 </div>
 
 <h2>
-Termin vereinbaren
+Termin im Nagelstudio Weissach vereinbaren
 </h2>
 
 <p>
@@ -970,7 +1185,9 @@ Schreib mir über WhatsApp oder buche deinen Termin direkt online.
 </p>
 
 <div class="phone">
+<a href="tel:+4917660603908">
 0176 60603908
+</a>
 </div>
 
 <div class="buttons">
@@ -1024,7 +1241,7 @@ Dein Moment
 </div>
 
 <h2>
-Mein Angebot
+Nageldesign, Maniküre und Pediküre
 </h2>
 
 <p>
@@ -1043,7 +1260,7 @@ individuell, sauber und mit Liebe zum Detail.
 </div>
 
 <h3>
-Neumodellage
+Gelnägel &amp; Neumodellage
 </h3>
 
 <p>
@@ -1060,7 +1277,7 @@ passend zu deinem Stil.
 </div>
 
 <h3>
-Auffüllen
+Auffüllen / Refill
 </h3>
 
 <p>
@@ -1105,6 +1322,12 @@ für gepflegte, schöne Füße.
 
 </div>
 
+<p class="area-text">
+Das Homestudio liegt in Weissach und ist auch aus
+Flacht, Rutesheim, Renningen, Heimsheim, Mönsheim,
+Weil der Stadt und Leonberg schnell erreichbar.
+</p>
+
 </div>
 
 </section>
@@ -1120,7 +1343,7 @@ Schönheit im Detail
 </div>
 
 <h2>
-Preisliste
+Preise für Nageldesign in Weissach
 </h2>
 
 </div>
@@ -1421,13 +1644,21 @@ Schön gepflegt.
 </div>
 
 <h2>
-Deine Nägel. Dein Moment.
+Dein Nagelstudio in Weissach
 </h2>
 
 <p>
-In meinem Homestudio steht deine Auszeit im Mittelpunkt.
+In meinem Homestudio in Weissach steht deine Auszeit im Mittelpunkt.
 Ich verbinde gepflegte Nägel mit einem persönlichen,
-ruhigen Ambiente und liebevollen Details.
+ruhigen Ambiente und liebevollen Details –
+ohne Hektik und ohne Wartezimmer.
+</p>
+
+<p>
+Ob Gelnägel, ein Refill nach drei Wochen,
+eine klassische Maniküre oder eine Pediküre mit Shellac:
+Du bekommst eine Beratung, die zu deinen Nägeln
+und deinem Alltag passt.
 </p>
 
 <div class="checks">
@@ -1456,12 +1687,188 @@ Individuelle Nailart
 
 </section>
 
+<section id="anfahrt">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="script">
+So findest du mich
+</div>
+
+<h2>
+Anfahrt &amp; Öffnungszeiten
+</h2>
+
+</div>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3>
+Adresse
+</h3>
+
+<address>
+Orchidea Viola Homestudio<br>
+Keplerstraße 4<br>
+71287 Weissach<br>
+Baden-Württemberg
+</address>
+
+<p style="margin-top:12px">
+Telefon &amp; WhatsApp:
+<a href="tel:+4917660603908">
+0176 60603908
+</a>
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Öffnungszeiten
+</h3>
+
+<p>
+Termine nach Vereinbarung.<br>
+<!-- Bitte hier die echten Zeiten eintragen, z. B.:
+     Montag bis Freitag 9–18 Uhr, Samstag 9–14 Uhr -->
+Schreib mir kurz über WhatsApp oder buche online –
+ich melde mich zeitnah mit einem passenden Termin.
+</p>
+
+<p style="margin-top:12px">
+Termine sind auch außerhalb der üblichen Zeiten möglich,
+frag einfach nach.
+</p>
+
+</div>
+
+</div>
+
+<p class="area-text">
+Das Studio liegt zentral in Weissach, nur wenige Minuten von
+Flacht, Rutesheim, Renningen, Heimsheim, Mönsheim, Friolzheim,
+Wimsheim, Weil der Stadt und Leonberg entfernt.
+Parken ist direkt vor Ort möglich.
+</p>
+
+</div>
+
+</section>
+
+<section id="fragen">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="script">
+Gut zu wissen
+</div>
+
+<h2>
+Häufige Fragen
+</h2>
+
+</div>
+
+<div style="max-width:820px;margin:auto">
+
+<div class="faq-item">
+
+<h3>
+Wo finde ich ein Nagelstudio in Weissach?
+</h3>
+
+<p>
+Orchidea Viola ist ein Nageldesign-Homestudio in der
+Keplerstraße 4 in 71287 Weissach.
+Termine gibt es nach Vereinbarung per WhatsApp
+unter 0176 60603908 oder über die Online-Buchung.
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>
+Was kosten Gelnägel in Weissach?
+</h3>
+
+<p>
+Eine Neumodellage mit Gel kostet 60 € in kurz bis mittel
+und 70 € in lang. Das Auffüllen beginnt bei 45 €.
+Extras wie French, Babyboomer oder Nailart kommen
+je nach Wunsch dazu.
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>
+Wie oft müssen Gelnägel aufgefüllt werden?
+</h3>
+
+<p>
+In der Regel alle drei bis vier Wochen.
+Je nach Nagelwachstum kann der Abstand
+etwas kürzer oder länger sein.
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>
+Wie vereinbare ich einen Termin?
+</h3>
+
+<p>
+Am schnellsten per WhatsApp an 0176 60603908
+oder direkt über die Online-Terminbuchung auf dieser Seite.
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>
+Kommen auch Kundinnen aus Rutesheim, Renningen oder Leonberg?
+</h3>
+
+<p>
+Ja. Das Studio liegt in Weissach und ist aus Flacht, Rutesheim,
+Renningen, Heimsheim, Mönsheim, Weil der Stadt und Leonberg
+in wenigen Minuten erreichbar.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
 </main>
 
 <footer>
 
+<address class="footer-nap">
+<strong>Orchidea Viola Homestudio</strong><br>
+Keplerstraße 4, 71287 Weissach<br>
+Telefon &amp; WhatsApp:
+<a href="tel:+4917660603908">0176 60603908</a>
+</address>
+
 © 2026 Orchidea Viola Homestudio ·
-Nageldesign · Maniküre · Pediküre
+Nagelstudio Weissach · Nageldesign · Maniküre · Pediküre
 
 <div class="footer-links">
 
@@ -1599,10 +2006,10 @@ Server- und Zugriffsdaten
 </h4>
 
 <p>
-Beim Besuch der Website können durch den Hostinganbieter
-technisch erforderliche Zugriffsdaten wie IP-Adresse,
-Zeitpunkt und angeforderte Seite verarbeitet werden.
-Einzelheiten richten sich nach dem verwendeten Hostinganbieter.
+Diese Website wird über GitHub Pages bereitgestellt.
+Dabei können technisch erforderliche Zugriffsdaten wie
+IP-Adresse, Zeitpunkt und angeforderte Seite
+durch den Hostinganbieter verarbeitet werden.
 </p>
 
 <h4>
